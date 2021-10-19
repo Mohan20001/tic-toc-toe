@@ -1,12 +1,11 @@
 let player=true;
 let twoPlayerMode = true;
-
 let playerX="";
 let playerO="";
 let choiceA=0;
 let choiceB=0;
-let arr=["123","456","789","147","258","369","159","356","321"];
-// let arr=[5,12,14,15,18];
+// let arr=["123","456","789","147","258","369","159","356","321"];
+let arr=[];
 function setTxt(e){   
     if(twoPlayerMode==true){
         if (player == true) {
@@ -40,3 +39,16 @@ let checkForGameOver = (str,list)=>{
      }
 }
 
+let rptn= ()=>{
+    for (let i = 1; i < 10; i++) {
+        for (let j = 1; j < 10; j++) {
+            for (let k = 1; k < 10; k++) {
+                // console.log(`${i}${j}${k}`)
+                arr.push(`${i}${j}${k}`);
+            }
+            
+        }
+        
+    }
+}
+rptn();
