@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.board{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 5px solid black;
+    border-radius: 10px;
+}
+button{
+    background: white;
+    font-size: 5rem;
+    font-weight: 700;
+    outline: none;
+}
